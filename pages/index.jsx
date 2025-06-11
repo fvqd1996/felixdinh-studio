@@ -105,7 +105,8 @@ useEffect(() => {
           </div>
         </nav>
 
-        <section id="welcome" className="pt-20"></section>
+        <span id="welcome" className="block h-20 -mt-20" aria-hidden="true"></span>
+        <section className="pt-20"></section>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={0.2} className="text-center">
           <h1 className="font-cursive text-4xl sm:text-5xl tracking-tight mb-6">Felix Dinh Studio</h1>
         </motion.div>
@@ -119,7 +120,8 @@ useEffect(() => {
         </motion.section>
 
         {/* Piano Lessons */}
-        <motion.section id="lessons" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={2} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <span id="lessons" className="block h-20 -mt-20" aria-hidden="true"></span> 
+        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={2} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🎹 Piano Lessons with Soul</h2>
           <p className="mb-3 text-sm sm:text-base">I teach beginners, returners, and passionate learners. Expression comes first — not dry drills. My approach is intuitive, emotionally grounded, and centred on unlocking feeling, not just reading notes.</p>
           <p className="mb-3 text-sm sm:text-base">This is a quiet return to the music I grew up with – shared with students who care. <strong>Availability is limited</strong> – but if you feel a spark, I’d love to help you begin.</p>
@@ -134,7 +136,8 @@ useEffect(() => {
         </motion.section>
 
         {/* Original Songs */}
-        <motion.section id="songs" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={3} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <span id="songs" className="block h-20 -mt-20" aria-hidden="true"></span> 
+        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={3} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🎼 Original Songs – Coming Soon</h2>
           <p className="mb-3 text-sm sm:text-base">I write and record lyrical, piano-driven songs shaped by memory, myth, and the sea. Demos are currently in the works. This space will grow as the music takes form.</p>
           <blockquote className="italic text-gray-600 border-l-4 border-gray-400 pl-4 text-sm sm:text-base">
@@ -145,7 +148,8 @@ useEffect(() => {
         </motion.section>
 
         {/* About */}
-        <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={4} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <span id="about" className="block h-20 -mt-20" aria-hidden="true"></span> 
+        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={4} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🧍 About</h2>
           <p className="mb-3 text-sm sm:text-base">London-based pianist, violinist, and songwriter. ABRSM Grade 8 Distinction in both piano and violin, Grade 5 Theory (Merit). Available for piano teaching, school partnerships, and select creative projects.</p>
           <p className="mb-3 text-sm sm:text-base">Alongside music, my background spans strategic and creative work across corporate and artistic domains. I care deeply about emotional craft, structured thinking, and collaborating with people who lead with intention and heart.</p>
@@ -156,7 +160,8 @@ useEffect(() => {
         </motion.section>
 
         {/* Contact */}
-        <motion.section id="contact" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={5} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <span id="contact" className="block h-20 -mt-20" aria-hidden="true"></span> 
+        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={5} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">📬 Get In Touch</h2>
           <form onSubmit={handleSubmit} className="space-y-4" aria-label="Contact form" aria-describedby="form-status">
             <input type="text" name="name" required placeholder="Your Name" className="w-full border px-3 py-2 rounded leading-relaxed" />
@@ -184,7 +189,8 @@ useEffect(() => {
         </motion.section>
 
         {/* Privacy Policy */}
-        <section id="privacy" className="text-xs text-gray-600 max-w-3xl mx-auto pt-12 border-t">
+        <span id="privacy" className="block h-20 -mt-20" aria-hidden="true"></span> 
+        <section className="text-xs text-gray-600 max-w-3xl mx-auto pt-12 border-t">
           <h2 className="text-sm font-semibold mb-2">Privacy Policy</h2>
           <p className="mb-2">This site collects only the information you provide via the contact form – name, email, message – and uses it solely to respond. Data is not shared or sold.</p>
           <p className="mb-2">Form handling is powered by Formspree and protected by Google reCAPTCHA. Analytics via Simple Analytics.</p>
