@@ -145,7 +145,7 @@ useEffect(() => {
         </motion.section>
 
         {/* About */}
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={4} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={4} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🧍 About</h2>
           <p className="mb-3 text-sm sm:text-base">London-based pianist, violinist, and songwriter. ABRSM Grade 8 Distinction in both piano and violin, Grade 5 Theory (Merit). Available for piano teaching, school partnerships, and select creative projects.</p>
           <p className="mb-3 text-sm sm:text-base">Alongside music, my background spans strategic and creative work across corporate and artistic domains. I care deeply about emotional craft, structured thinking, and collaborating with people who lead with intention and heart.</p>
