@@ -23,7 +23,12 @@ function CookieBanner() {
 }
 
 export default function FelixDinhStudio() {
-  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('dark-mode') === 'true');
+  const [darkMode, setDarkMode] = useState(false);
+
+useEffect(() => {
+  const stored = typeof window !== 'undefined' ? localStorage.getItem('dark-mode') : null;
+  if (stored) setDarkMode(stored === 'true');
+}, []);
   const [formStatus, setFormStatus] = useState('');
 
   useEffect(() => {
