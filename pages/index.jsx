@@ -97,7 +97,7 @@ useEffect(() => {
           <div className="max-w-4xl mx-auto flex justify-between items-center p-4">
             <a href="#hero" className="font-bold text-lg">Felix Dinh Studio</a>
             <div className="space-x-4 flex items-center">
-              {['hero','lessons','songs','about','contact','privacy'].map(id => (
+              {['welcome','lessons','songs','about','contact','privacy'].map(id => (
                 <a key={id} href={`#${id}`} className="hover:underline text-sm capitalize">{id}</a>
               ))}
               <button onClick={() => setDarkMode(!darkMode)} aria-label="Toggle dark mode" className="px-2">{darkMode ? '☀️' : '🌙'}</button>
@@ -105,7 +105,7 @@ useEffect(() => {
           </div>
         </nav>
 
-        <section id="hero" className="pt-20"></section>
+        <section id="welcome" className="pt-20"></section>
         <motion.div initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={0.2} className="text-center">
           <h1 className="font-cursive text-4xl sm:text-5xl tracking-tight mb-6">Felix Dinh Studio</h1>
         </motion.div>
@@ -119,7 +119,7 @@ useEffect(() => {
         </motion.section>
 
         {/* Piano Lessons */}
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={2} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <motion.section id="lessons" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={2} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🎹 Piano Lessons with Soul</h2>
           <p className="mb-3 text-sm sm:text-base">I teach beginners, returners, and passionate learners. Expression comes first — not dry drills. My approach is intuitive, emotionally grounded, and centred on unlocking feeling, not just reading notes.</p>
           <p className="mb-3 text-sm sm:text-base">This is a quiet return to the music I grew up with – shared with students who care. <strong>Availability is limited</strong> – but if you feel a spark, I’d love to help you begin.</p>
@@ -134,7 +134,7 @@ useEffect(() => {
         </motion.section>
 
         {/* Original Songs */}
-        <motion.section initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={3} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
+        <motion.section id="songs" initial="hidden" whileInView="visible" viewport={{ once:true }} variants={fadeIn} custom={3} className="bg-gray-50 shadow-lg rounded-2xl p-6 max-w-3xl mx-auto">
           <h2 className="text-xl sm:text-2xl font-semibold mb-3">🎼 Original Songs – Coming Soon</h2>
           <p className="mb-3 text-sm sm:text-base">I write and record lyrical, piano-driven songs shaped by memory, myth, and the sea. Demos are currently in the works. This space will grow as the music takes form.</p>
           <blockquote className="italic text-gray-600 border-l-4 border-gray-400 pl-4 text-sm sm:text-base">
